@@ -7,4 +7,4 @@ function getPrimenum(...arr){
     }
   }
 }
-getPrimenum(3,22,29,18,31);
+getPrimenum(7,11,17,23,31,37);
