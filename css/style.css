@@ -15,9 +15,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.829);
   font-family: sans-serif;
-  
+  transition: all .4s ease;
   
 }
 
@@ -44,13 +44,87 @@ h6{
 p{
   margin: 0;
 }
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
 .container{
+  position: relative;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
+  height: 100vh;
+}
+.shift{
+  margin-top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  width: 700px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.btn{
+  width: 100px;
+  height: 100px;
+}
+.colors{
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.co1{
+  background-color: #095309;
+}
+.co2{
+  background-color: #8e910d;
+}
+.co3{
+  background-color: #530b09;
+}
+.co4{
+  background-color: #093b53;
+}
+.block{
+  display: block;
+}
+.co{
+  background-color: #fff;
+}
+.btn{
+  height: 40px;
+}
+.span{
+  display: inline-block;
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  color: #fff;
+  animation-name: sp;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count:infinite
+}
+@keyframes sp{
+  0%{
+    width: 40px;
+    height: 40px;
+  }
+  50%{
+    width: 50px;
+    height: 50px;
+  }
+  100%{
+    width: 40px;
+    height: 40px;
+  }
 }
